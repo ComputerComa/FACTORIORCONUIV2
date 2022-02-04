@@ -6,12 +6,13 @@
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="ARPCONTACT" Value="Walker Dick (Walkerraydick2@gmail.com)"/>
+    <ROW Property="ARPPRODUCTICON" Value="Consokle.exe" Type="8"/>
     <ROW Property="MSIFASTINSTALL" MultiBuildValue="x64_Release:1"/>
     <ROW Property="Manufacturer" Value="ComputerComa"/>
-    <ROW Property="ProductCode" Value="1033:{DC635CA1-2CAB-4FD6-B791-E7B86673708C} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{842301DA-9F1D-4FC3-8A07-6AE4A7F07E2E} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Factorio RCON"/>
-    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.0.1" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{9EE1BF39-5555-40D5-9DD8-CC981E92A97B}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="x64_Release:Windows 9x/ME#x86_Release:Windows 9x/ME" ValueLocId="-"/>
@@ -30,24 +31,24 @@
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="APPDIR" ComponentId="{0C941441-D049-404A-8D72-646571FEF69F}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="FACTORIORCONUIV2.exe" ComponentId="{C20F9DBF-853D-47AC-A42A-E366E668DDDF}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe"/>
-    <ROW Component="FACTORIORCONUIV2.exe.config" ComponentId="{F3E7518E-BAD1-47B4-AAD5-F11640240703}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe.config" Type="0"/>
-    <ROW Component="MaterialSkin.dll" ComponentId="{55BFC63F-72DA-4563-B586-2112830E9ACB}" Directory_="APPDIR" Attributes="0" KeyPath="MaterialSkin.dll"/>
-    <ROW Component="ProductInformation" ComponentId="{74842D53-662A-413A-B0AF-A6B3D1889C57}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
-    <ROW Component="Rcon.dll" ComponentId="{B917FE00-1086-4012-9A91-0BCBB3EAFE6A}" Directory_="APPDIR" Attributes="0" KeyPath="Rcon.dll"/>
-    <ROW Component="SHORTCUTDIR" ComponentId="{E525C212-3BB4-4D7E-80CE-9D92EC6B6D66}" Directory_="SHORTCUTDIR" Attributes="0"/>
-    <ROW Component="System.Core.dll" ComponentId="{D10F7821-840A-472C-A53D-4F7BFFFF9347}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
-    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{2E95FD53-CEAA-49A6-AEC5-774A472F39F8}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
-    <ROW Component="System.Data.dll" ComponentId="{FEC9EBDD-0A96-4DF4-9E7E-36020B8C0E4D}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
-    <ROW Component="System.Deployment.dll" ComponentId="{4551E64C-8998-485B-8D73-5D5C493EEE7C}" Directory_="APPDIR" Attributes="0" KeyPath="System.Deployment.dll"/>
-    <ROW Component="System.Drawing.dll" ComponentId="{EE5407EB-7F75-4E20-9D17-24FA26A65230}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
-    <ROW Component="System.Net.Http.dll" ComponentId="{5019AC14-992F-4864-B8FC-1E142479D1EC}" Directory_="APPDIR" Attributes="0" KeyPath="System.Net.Http.dll"/>
-    <ROW Component="System.Windows.Forms.dll" ComponentId="{5920B643-5D3C-4AD7-96E0-3A408BDC440C}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
-    <ROW Component="System.Xml.Linq.dll" ComponentId="{87D981E4-1B46-4C5E-BE2C-C6EB5E06A837}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
-    <ROW Component="System.Xml.dll" ComponentId="{F2B79F5F-0539-43CF-BDD5-E75C0FEB6C5A}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
-    <ROW Component="System.dll" ComponentId="{D7BB237B-7FE9-43C1-AF4B-18E40D0CD749}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
-    <ROW Component="netstandard.dll" ComponentId="{7119F4FD-689E-48EF-83C5-BBA65A3F00FB}" Directory_="APPDIR" Attributes="0" KeyPath="netstandard.dll"/>
+    <ROW Component="APPDIR" ComponentId="{9833D846-FE4B-42E7-BA02-5C00DA871BE3}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="FACTORIORCONUIV2.exe" ComponentId="{48D031D9-BCFA-40DD-993C-4BCC0BBE2944}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe"/>
+    <ROW Component="FACTORIORCONUIV2.exe.config" ComponentId="{21AB4FE4-B0C9-4FB6-81D6-9AE116C024D2}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe.config" Type="0"/>
+    <ROW Component="MaterialSkin.dll" ComponentId="{1756465A-C99F-4296-9D8E-FB52D473BE0E}" Directory_="APPDIR" Attributes="0" KeyPath="MaterialSkin.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{261975EE-72BF-4E9A-8F1A-BCFEBEB6CD73}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Rcon.dll" ComponentId="{EDAADF31-79C6-436D-8FDD-EF3DE53C5B48}" Directory_="APPDIR" Attributes="0" KeyPath="Rcon.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{D8D9AC04-2747-4462-80C9-D6176B38094C}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="System.Core.dll" ComponentId="{88BF89D0-48CD-403D-B59F-E65EFFD10F09}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{E7B750EA-0373-4A3A-B30B-699C61B2D1BA}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{6E168204-E5AB-47F3-B302-CE3FA9600147}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Deployment.dll" ComponentId="{BC11336B-B877-4525-AABA-B3466D07CE44}" Directory_="APPDIR" Attributes="0" KeyPath="System.Deployment.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{A04940BA-19AC-4924-B311-81747F47CEB5}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{7F2A80C1-F488-4513-A2B7-9802CAE67093}" Directory_="APPDIR" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Windows.Forms.dll" ComponentId="{55510825-80F7-4792-852C-0A38094B4C9D}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{1C389224-6FDF-4724-AEC7-601DC74C1802}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{508881A2-5DDF-498E-8F5B-C942C85C508D}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{B66B3F8C-5837-4D20-8DD3-4AE82F41EC93}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="netstandard.dll" ComponentId="{E9481EFA-BB12-4EBF-B4CB-CE70B7F98986}" Directory_="APPDIR" Attributes="0" KeyPath="netstandard.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
@@ -159,6 +160,9 @@
     <ROW Feature_="MainFeature" Component_="System.Xml.dll"/>
     <ROW Feature_="MainFeature" Component_="System.Xml.Linq.dll"/>
     <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Consokle.exe" SourcePath="..\..\..\..\..\Downloads\Consokle.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
