@@ -27,12 +27,14 @@ Public Class FRM_MAIN
         Catch ex As InvalidCastException
             PortValid = False
         End Try
+        If MS_TXT_CON_PASSWD.Text.Length > 0 Then
+            PASS = True
+        Else
+            PASS = False
+        End If
         Dim OK As Boolean = IPVALID And PortValid And PASS
         Return OK
     End Function
-    Sub Connect_RCON(IP As String, PORT As String, PASSWD As String)
-
-    End Sub
 
     Private Sub FRM_MAIN_Load(sender As Object, e As EventArgs) Handles Me.Load
 
@@ -46,13 +48,25 @@ Public Class FRM_MAIN
     Private Sub MS_RB_CONNECT_Click(sender As Object, e As EventArgs) Handles MS_RB_CONNECT.Click
         Dim Validated = Form_Validate()
         If Validated Then
+            Try
+                MS_OUTPUT.Text += "Trying to connect to " + MS_TXT_CON_IP.Text + " on port " + MS_TXT_CON_PORT.Text
+                Client.Connect(MS_TXT_CON_IP.Text, CInt(MS_TXT_CON_PORT.Text))
+                MS_OUTPUT.Text += vbNewLine + "Connection Successful!"
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+            Try
+                MS_OUTPUT.Text += vbNewLine + "Attempting to authenticate!"
+                Client.Authenticate(MS_TXT_CON_PASSWD.Text)
 
+            Catch ex As Exception
+                MS_OUTPUT.Text += vbNewLine + "Error authenticating!"
+            End Try
+        Else
+            MS_OUTPUT.Text += "Error with input data!"
         End If
     End Sub
 
-    Private Sub MS_TXT_CON_IP_Leave(sender As Object, e As EventArgs) Handles MS_TXT_CON_IP.Leave
-
-    End Sub
 
 
 End Class
