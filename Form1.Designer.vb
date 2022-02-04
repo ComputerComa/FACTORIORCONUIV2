@@ -22,6 +22,7 @@ Partial Class FRM_MAIN
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_MAIN))
         Me.MaterialDivider1 = New MaterialSkin.Controls.MaterialDivider()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.MS_TXT_CON_IP = New MaterialSkin.Controls.MaterialSingleLineTextField()
@@ -600,6 +601,7 @@ Partial Class FRM_MAIN
         Me.Controls.Add(Me.MaterialLabel1)
         Me.Controls.Add(Me.MaterialDivider1)
         Me.Controls.Add(Me.MaterialDivider5)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FRM_MAIN"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Factorio RCON Client"

@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICO.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
@@ -125,6 +128,9 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICO.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
