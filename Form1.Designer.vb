@@ -97,7 +97,7 @@ Partial Class FRM_MAIN
         Me.MS_TXT_CON_IP.SelectionLength = 0
         Me.MS_TXT_CON_IP.SelectionStart = 0
         Me.MS_TXT_CON_IP.Size = New System.Drawing.Size(221, 23)
-        Me.MS_TXT_CON_IP.TabIndex = 2
+        Me.MS_TXT_CON_IP.TabIndex = 1
         Me.MS_TXT_CON_IP.TabStop = False
         Me.MS_TXT_CON_IP.UseSystemPasswordChar = False
         '
@@ -107,7 +107,7 @@ Partial Class FRM_MAIN
         Me.MS_OUTPUT.Multiline = True
         Me.MS_OUTPUT.Name = "MS_OUTPUT"
         Me.MS_OUTPUT.Size = New System.Drawing.Size(356, 413)
-        Me.MS_OUTPUT.TabIndex = 3
+        Me.MS_OUTPUT.TabIndex = 500
         '
         'MS_TXT_CON_PORT
         '
@@ -122,8 +122,9 @@ Partial Class FRM_MAIN
         Me.MS_TXT_CON_PORT.SelectionLength = 0
         Me.MS_TXT_CON_PORT.SelectionStart = 0
         Me.MS_TXT_CON_PORT.Size = New System.Drawing.Size(129, 23)
-        Me.MS_TXT_CON_PORT.TabIndex = 4
+        Me.MS_TXT_CON_PORT.TabIndex = 2
         Me.MS_TXT_CON_PORT.TabStop = False
+        Me.MS_TXT_CON_PORT.Text = "25575"
         Me.MS_TXT_CON_PORT.UseSystemPasswordChar = False
         '
         'MS_TXT_CON_PASSWD
@@ -139,7 +140,7 @@ Partial Class FRM_MAIN
         Me.MS_TXT_CON_PASSWD.SelectionLength = 0
         Me.MS_TXT_CON_PASSWD.SelectionStart = 0
         Me.MS_TXT_CON_PASSWD.Size = New System.Drawing.Size(266, 23)
-        Me.MS_TXT_CON_PASSWD.TabIndex = 5
+        Me.MS_TXT_CON_PASSWD.TabIndex = 3
         Me.MS_TXT_CON_PASSWD.TabStop = False
         Me.MS_TXT_CON_PASSWD.UseSystemPasswordChar = False
         '
@@ -154,7 +155,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_CONNECT.Name = "MS_RB_CONNECT"
         Me.MS_RB_CONNECT.Primary = True
         Me.MS_RB_CONNECT.Size = New System.Drawing.Size(84, 36)
-        Me.MS_RB_CONNECT.TabIndex = 6
+        Me.MS_RB_CONNECT.TabIndex = 4
         Me.MS_RB_CONNECT.Text = "Connect"
         Me.MS_RB_CONNECT.UseVisualStyleBackColor = True
         '
@@ -169,7 +170,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_DISCONNECT.Name = "MS_RB_DISCONNECT"
         Me.MS_RB_DISCONNECT.Primary = True
         Me.MS_RB_DISCONNECT.Size = New System.Drawing.Size(105, 36)
-        Me.MS_RB_DISCONNECT.TabIndex = 7
+        Me.MS_RB_DISCONNECT.TabIndex = 5
         Me.MS_RB_DISCONNECT.Text = "Disconnect"
         Me.MS_RB_DISCONNECT.UseVisualStyleBackColor = True
         '
@@ -208,7 +209,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_QC_PLAYERS.Name = "MS_RB_QC_PLAYERS"
         Me.MS_RB_QC_PLAYERS.Primary = True
         Me.MS_RB_QC_PLAYERS.Size = New System.Drawing.Size(79, 36)
-        Me.MS_RB_QC_PLAYERS.TabIndex = 10
+        Me.MS_RB_QC_PLAYERS.TabIndex = 6
         Me.MS_RB_QC_PLAYERS.Text = "Players"
         Me.MS_RB_QC_PLAYERS.UseVisualStyleBackColor = True
         '
@@ -223,7 +224,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_QC_ADMINS.Name = "MS_RB_QC_ADMINS"
         Me.MS_RB_QC_ADMINS.Primary = True
         Me.MS_RB_QC_ADMINS.Size = New System.Drawing.Size(73, 36)
-        Me.MS_RB_QC_ADMINS.TabIndex = 11
+        Me.MS_RB_QC_ADMINS.TabIndex = 7
         Me.MS_RB_QC_ADMINS.Text = "Admins"
         Me.MS_RB_QC_ADMINS.UseVisualStyleBackColor = True
         '
@@ -238,7 +239,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_QC_SERVSAVE.Name = "MS_RB_QC_SERVSAVE"
         Me.MS_RB_QC_SERVSAVE.Primary = True
         Me.MS_RB_QC_SERVSAVE.Size = New System.Drawing.Size(108, 36)
-        Me.MS_RB_QC_SERVSAVE.TabIndex = 12
+        Me.MS_RB_QC_SERVSAVE.TabIndex = 8
         Me.MS_RB_QC_SERVSAVE.Text = "Server Save"
         Me.MS_RB_QC_SERVSAVE.UseVisualStyleBackColor = True
         '
@@ -253,7 +254,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_QC_STOP_SRV.Name = "MS_RB_QC_STOP_SRV"
         Me.MS_RB_QC_STOP_SRV.Primary = True
         Me.MS_RB_QC_STOP_SRV.Size = New System.Drawing.Size(109, 36)
-        Me.MS_RB_QC_STOP_SRV.TabIndex = 13
+        Me.MS_RB_QC_STOP_SRV.TabIndex = 9
         Me.MS_RB_QC_STOP_SRV.Text = "Stop Server"
         Me.MS_RB_QC_STOP_SRV.UseVisualStyleBackColor = True
         '
@@ -292,7 +293,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_PURGE_PLAYER.Name = "MS_RB_AC_PURGE_PLAYER"
         Me.MS_RB_AC_PURGE_PLAYER.Primary = True
         Me.MS_RB_AC_PURGE_PLAYER.Size = New System.Drawing.Size(118, 36)
-        Me.MS_RB_AC_PURGE_PLAYER.TabIndex = 16
+        Me.MS_RB_AC_PURGE_PLAYER.TabIndex = 10
         Me.MS_RB_AC_PURGE_PLAYER.Text = "Purge Player"
         Me.MS_RB_AC_PURGE_PLAYER.UseVisualStyleBackColor = True
         '
@@ -307,7 +308,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_KICK_PLAYER.Name = "MS_RB_AC_KICK_PLAYER"
         Me.MS_RB_AC_KICK_PLAYER.Primary = True
         Me.MS_RB_AC_KICK_PLAYER.Size = New System.Drawing.Size(105, 36)
-        Me.MS_RB_AC_KICK_PLAYER.TabIndex = 17
+        Me.MS_RB_AC_KICK_PLAYER.TabIndex = 11
         Me.MS_RB_AC_KICK_PLAYER.Text = "Kick Player"
         Me.MS_RB_AC_KICK_PLAYER.UseVisualStyleBackColor = True
         '
@@ -322,7 +323,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_BAN_PLAYER.Name = "MS_RB_AC_BAN_PLAYER"
         Me.MS_RB_AC_BAN_PLAYER.Primary = True
         Me.MS_RB_AC_BAN_PLAYER.Size = New System.Drawing.Size(102, 36)
-        Me.MS_RB_AC_BAN_PLAYER.TabIndex = 18
+        Me.MS_RB_AC_BAN_PLAYER.TabIndex = 12
         Me.MS_RB_AC_BAN_PLAYER.Text = "Ban Player"
         Me.MS_RB_AC_BAN_PLAYER.UseVisualStyleBackColor = True
         '
@@ -337,7 +338,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_UNBAN_PLAYER.Name = "MS_RB_AC_UNBAN_PLAYER"
         Me.MS_RB_AC_UNBAN_PLAYER.Primary = True
         Me.MS_RB_AC_UNBAN_PLAYER.Size = New System.Drawing.Size(121, 36)
-        Me.MS_RB_AC_UNBAN_PLAYER.TabIndex = 19
+        Me.MS_RB_AC_UNBAN_PLAYER.TabIndex = 13
         Me.MS_RB_AC_UNBAN_PLAYER.Text = "UnBan Player"
         Me.MS_RB_AC_UNBAN_PLAYER.UseVisualStyleBackColor = True
         '
@@ -352,7 +353,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_PROMOTE_PLAYER.Name = "MS_RB_AC_PROMOTE_PLAYER"
         Me.MS_RB_AC_PROMOTE_PLAYER.Primary = True
         Me.MS_RB_AC_PROMOTE_PLAYER.Size = New System.Drawing.Size(139, 36)
-        Me.MS_RB_AC_PROMOTE_PLAYER.TabIndex = 20
+        Me.MS_RB_AC_PROMOTE_PLAYER.TabIndex = 14
         Me.MS_RB_AC_PROMOTE_PLAYER.Text = "Promote Player"
         Me.MS_RB_AC_PROMOTE_PLAYER.UseVisualStyleBackColor = True
         '
@@ -367,7 +368,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_DEMOTE_PLAYER.Name = "MS_RB_AC_DEMOTE_PLAYER"
         Me.MS_RB_AC_DEMOTE_PLAYER.Primary = True
         Me.MS_RB_AC_DEMOTE_PLAYER.Size = New System.Drawing.Size(139, 36)
-        Me.MS_RB_AC_DEMOTE_PLAYER.TabIndex = 21
+        Me.MS_RB_AC_DEMOTE_PLAYER.TabIndex = 17
         Me.MS_RB_AC_DEMOTE_PLAYER.Text = "Demote    Player"
         Me.MS_RB_AC_DEMOTE_PLAYER.UseVisualStyleBackColor = True
         '
@@ -382,7 +383,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_MUTE_PLAYER.Name = "MS_RB_AC_MUTE_PLAYER"
         Me.MS_RB_AC_MUTE_PLAYER.Primary = True
         Me.MS_RB_AC_MUTE_PLAYER.Size = New System.Drawing.Size(129, 36)
-        Me.MS_RB_AC_MUTE_PLAYER.TabIndex = 22
+        Me.MS_RB_AC_MUTE_PLAYER.TabIndex = 15
         Me.MS_RB_AC_MUTE_PLAYER.Text = "Mute      Player"
         Me.MS_RB_AC_MUTE_PLAYER.UseVisualStyleBackColor = True
         '
@@ -397,7 +398,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_UNMUTE_PLAYER.Name = "MS_RB_AC_UNMUTE_PLAYER"
         Me.MS_RB_AC_UNMUTE_PLAYER.Primary = True
         Me.MS_RB_AC_UNMUTE_PLAYER.Size = New System.Drawing.Size(130, 36)
-        Me.MS_RB_AC_UNMUTE_PLAYER.TabIndex = 23
+        Me.MS_RB_AC_UNMUTE_PLAYER.TabIndex = 18
         Me.MS_RB_AC_UNMUTE_PLAYER.Text = "Unmute Player"
         Me.MS_RB_AC_UNMUTE_PLAYER.UseVisualStyleBackColor = True
         '
@@ -412,7 +413,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_UNIGNORE_PLAYER.Name = "MS_RB_AC_UNIGNORE_PLAYER"
         Me.MS_RB_AC_UNIGNORE_PLAYER.Primary = True
         Me.MS_RB_AC_UNIGNORE_PLAYER.Size = New System.Drawing.Size(142, 36)
-        Me.MS_RB_AC_UNIGNORE_PLAYER.TabIndex = 25
+        Me.MS_RB_AC_UNIGNORE_PLAYER.TabIndex = 19
         Me.MS_RB_AC_UNIGNORE_PLAYER.Text = "Unignore Player"
         Me.MS_RB_AC_UNIGNORE_PLAYER.UseVisualStyleBackColor = True
         '
@@ -427,7 +428,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_IGNORE_PLAYER.Name = "MS_RB_AC_IGNORE_PLAYER"
         Me.MS_RB_AC_IGNORE_PLAYER.Primary = True
         Me.MS_RB_AC_IGNORE_PLAYER.Size = New System.Drawing.Size(140, 36)
-        Me.MS_RB_AC_IGNORE_PLAYER.TabIndex = 24
+        Me.MS_RB_AC_IGNORE_PLAYER.TabIndex = 16
         Me.MS_RB_AC_IGNORE_PLAYER.Text = "Ignore      Player"
         Me.MS_RB_AC_IGNORE_PLAYER.UseVisualStyleBackColor = True
         '
@@ -444,7 +445,7 @@ Partial Class FRM_MAIN
         Me.MS_TXT_AC_PLAYER_ENTRY.SelectionLength = 0
         Me.MS_TXT_AC_PLAYER_ENTRY.SelectionStart = 0
         Me.MS_TXT_AC_PLAYER_ENTRY.Size = New System.Drawing.Size(200, 23)
-        Me.MS_TXT_AC_PLAYER_ENTRY.TabIndex = 26
+        Me.MS_TXT_AC_PLAYER_ENTRY.TabIndex = 20
         Me.MS_TXT_AC_PLAYER_ENTRY.TabStop = False
         Me.MS_TXT_AC_PLAYER_ENTRY.UseSystemPasswordChar = False
         '
@@ -485,7 +486,7 @@ Partial Class FRM_MAIN
         Me.MS_TXT_OC_CMD_ENRTY.SelectionLength = 0
         Me.MS_TXT_OC_CMD_ENRTY.SelectionStart = 0
         Me.MS_TXT_OC_CMD_ENRTY.Size = New System.Drawing.Size(200, 23)
-        Me.MS_TXT_OC_CMD_ENRTY.TabIndex = 29
+        Me.MS_TXT_OC_CMD_ENRTY.TabIndex = 21
         Me.MS_TXT_OC_CMD_ENRTY.TabStop = False
         Me.MS_TXT_OC_CMD_ENRTY.UseSystemPasswordChar = False
         '
@@ -502,7 +503,7 @@ Partial Class FRM_MAIN
         Me.MS_TXT_OC_CHAT_ENTRY.SelectionLength = 0
         Me.MS_TXT_OC_CHAT_ENTRY.SelectionStart = 0
         Me.MS_TXT_OC_CHAT_ENTRY.Size = New System.Drawing.Size(200, 23)
-        Me.MS_TXT_OC_CHAT_ENTRY.TabIndex = 30
+        Me.MS_TXT_OC_CHAT_ENTRY.TabIndex = 23
         Me.MS_TXT_OC_CHAT_ENTRY.TabStop = False
         Me.MS_TXT_OC_CHAT_ENTRY.UseSystemPasswordChar = False
         '
@@ -517,7 +518,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_AC_OC_CMD_SUBMIT.Name = "MS_RB_AC_OC_CMD_SUBMIT"
         Me.MS_RB_AC_OC_CMD_SUBMIT.Primary = True
         Me.MS_RB_AC_OC_CMD_SUBMIT.Size = New System.Drawing.Size(71, 36)
-        Me.MS_RB_AC_OC_CMD_SUBMIT.TabIndex = 31
+        Me.MS_RB_AC_OC_CMD_SUBMIT.TabIndex = 22
         Me.MS_RB_AC_OC_CMD_SUBMIT.Text = "Submit"
         Me.MS_RB_AC_OC_CMD_SUBMIT.UseVisualStyleBackColor = True
         '
@@ -532,7 +533,7 @@ Partial Class FRM_MAIN
         Me.MS_RB_OC_CHAT_SEND.Name = "MS_RB_OC_CHAT_SEND"
         Me.MS_RB_OC_CHAT_SEND.Primary = True
         Me.MS_RB_OC_CHAT_SEND.Size = New System.Drawing.Size(56, 36)
-        Me.MS_RB_OC_CHAT_SEND.TabIndex = 32
+        Me.MS_RB_OC_CHAT_SEND.TabIndex = 24
         Me.MS_RB_OC_CHAT_SEND.Text = "Send"
         Me.MS_RB_OC_CHAT_SEND.UseVisualStyleBackColor = True
         '
