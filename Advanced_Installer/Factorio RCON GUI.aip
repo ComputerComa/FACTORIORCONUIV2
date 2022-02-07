@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="19.1" version="19.1" Modules="professional" RootPath="." Language="en" Id="{DA9BC7C7-6C10-4C10-B4EA-8FA0EEA311A4}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="Application_AssetGenDestFolderPath" Value="Generated Assets" ValueType="1"/>
+    <ROW Name="AssetGenPkgDestFolderPath" Value="Generated Assets" ValueType="1"/>
+    <ROW Name="AssetGenPkgScalingMode" Value="2"/>
+    <ROW Name="AssetGenPkgSourceFilePath" Value="..\..\..\..\Downloads\Consokle.ico" ValueType="1"/>
+    <ROW Name="MigrationUninstallCode" Value="{9F535CE7-6FAD-472F-8A5A-88964C56CCC5}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="ARM_Release:aiui#ARM64_Release:aiui#x64_Release:aiui#x86_Release:aiui"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="Factorio RCON GUI"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="Consokle.exe" Type="8"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="AppLogoIcon" Value="applogoicon.bmp" MultiBuildValue="ARM_Release:Customdimensions128x128px.jpeg#ARM64_Release:Customdimensions128x128px.jpeg#x64_Release:Customdimensions128x128px.jpeg#x86_Release:Customdimensions128x128px.jpeg" Type="1" MsiKey="AppLogoIcon"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="Manufacturer" Value="ComputerComa"/>
+    <ROW Property="ProductCode" Value="1033:{8B4B67E6-E7E7-4F17-819D-8D17CC2E499B} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Factorio RCON GUI"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{9F535CE7-6FAD-472F-8A5A-88964C56CCC5}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="ARM_Release:Windows 9x/ME#ARM64_Release:Windows 9x/ME#x64_Release:Windows 9x/ME#x86_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="ARM_Release:Windows 9x/ME#ARM64_Release:Windows 9x/ME#x64_Release:Windows 9x/ME#x86_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="ARM_Release:Windows NT 4.0#ARM64_Release:Windows NT 4.0#x64_Release:Windows NT 4.0#x86_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="ARM_Release:Windows NT 4.0#ARM64_Release:Windows NT 4.0#x64_Release:Windows NT 4.0#x86_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="ARM_Release:Windows 2000#ARM64_Release:Windows 2000#x64_Release:Windows 2000#x86_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="ARM_Release:Windows 2000#ARM64_Release:Windows 2000#x64_Release:Windows 2000#x86_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="ARM_Release:Windows XP/2003#ARM64_Release:Windows XP/2003#x64_Release:Windows XP/2003#x86_Release:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="ARM_Release:Windows XP/2003#ARM64_Release:Windows XP/2003#x64_Release:Windows XP/2003#x86_Release:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Assets" Directory_Parent="TARGETDIR" DefaultDir="Assets" IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{7D30886E-94D4-451A-8090-6A5841A0698A}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="APPDIR" ComponentId="{41723B4C-F9DE-48C4-8340-8A25B23608C6}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="FACTORIORCONUIV2.exe" ComponentId="{37B58F51-C94D-45EF-8F04-EE95EAC33C68}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe"/>
+    <ROW Component="FACTORIORCONUIV2.exe.config" ComponentId="{8D4B510C-9FB3-41F2-90D6-F0F67B17D067}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe.config" Type="0"/>
+    <ROW Component="MaterialSkin.dll" ComponentId="{C973BF66-1547-41FF-90C2-DB905C5CEA77}" Directory_="APPDIR" Attributes="0" KeyPath="MaterialSkin.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{006EE914-4E93-4F2B-9863-8C709C1AB68E}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Rcon.dll" ComponentId="{9668DE72-A353-416A-9049-E448DE65D14F}" Directory_="APPDIR" Attributes="0" KeyPath="Rcon.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{5F8C8DA2-C800-4DBE-93A8-5C5E1BD6794F}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="Store50x50Logo.scale100.png" ComponentId="{081E9DE5-F856-474F-ABCB-A422E6FD7D41}" Directory_="Assets" Attributes="0" KeyPath="Store50x50Logo.scale100.png" Type="0"/>
+    <ROW Component="System.Core.dll" ComponentId="{93297F75-7294-437D-9FDA-7D10145C55BC}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{2B4E2898-18BF-4486-8DC5-AD39ECF2A632}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{3F402EEA-4675-4AEB-954B-0D3377318869}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Deployment.dll" ComponentId="{ACF47048-5E66-477A-A55C-78A4F6EE57D9}" Directory_="APPDIR" Attributes="0" KeyPath="System.Deployment.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{FA283871-618E-4996-A9E5-85E9936B6029}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{50B96F94-B6BC-4E3E-8378-0EEB9106D58E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Windows.Forms.dll" ComponentId="{2DD6537D-B657-4977-8481-B460384ACBC3}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{3697EBD0-72E9-4AEA-8EFE-C2411DC83AEE}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{9CE51702-0470-4225-A0D3-C14EFB879E93}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{0D7E161C-8F9C-432D-9142-C4FF3998EB32}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="netstandard.dll" ComponentId="{EF772827-BFB9-49AB-A4CC-1C011B63D5B5}" Directory_="APPDIR" Attributes="0" KeyPath="netstandard.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="AiAppXAssets" Title="AiAppXAssets" Description="Description" Display="3" Level="0" Directory_="APPDIR" Attributes="0" Options="271" Builds="Build_MSIX_APPX;Build_MSIX_APPX_1"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Store50x50Logo.scale100.png" Component_="Store50x50Logo.scale100.png" FileName="STORE5~1.PNG|Store50x50Logo.scale-100.png" Attributes="0" SourcePath="Generated Assets\Store50x50Logo.scale-100.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale100.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~1.PNG|FactorioRCONGUISquare44x44Logo.scale-100.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-100.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale100.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~2.PNG|FactorioRCONGUISquare150x150Logo.scale-100.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-100.png" SelfReg="false"/>
+    <ROW File="FACTORIORCONUIV2.exe" Component_="FACTORIORCONUIV2.exe" FileName="FACTOR~1.EXE|FACTORIORCONUIV2.exe" Attributes="0" SourcePath="..\bin\Release\FACTORIORCONUIV2.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="FACTORIORCONUIV2.exe.config" Component_="FACTORIORCONUIV2.exe.config" FileName="FACTOR~1.CON|FACTORIORCONUIV2.exe.config" Attributes="0" SourcePath="..\bin\Release\FACTORIORCONUIV2.exe.config" SelfReg="false"/>
+    <ROW File="MaterialSkin.dll" Component_="MaterialSkin.dll" FileName="MATERI~1.DLL|MaterialSkin.dll" Attributes="0" SourcePath="..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll" SelfReg="false"/>
+    <ROW File="Rcon.dll" Component_="Rcon.dll" FileName="Rcon.dll" Attributes="0" SourcePath="..\packages\Rcon.1.0.0\lib\netstandard2.0\Rcon.dll" SelfReg="false"/>
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTEM~1.DLL|System.Core.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" SelfReg="false"/>
+    <ROW File="System.Data.DataSetExtensions.dll" Component_="System.Data.DataSetExtensions.dll" FileName="SYSTEM~2.DLL|System.Data.DataSetExtensions.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" SelfReg="false"/>
+    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="SYSTEM~3.DLL|System.Data.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" SelfReg="false"/>
+    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="SYSTEM~4.DLL|System.Net.Http.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" SelfReg="false"/>
+    <ROW File="System.Deployment.dll" Component_="System.Deployment.dll" FileName="SYSTEM~5.DLL|System.Deployment.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll" SelfReg="false"/>
+    <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.dll" Component_="System.Drawing.dll" FileName="SYSTEM~6.DLL|System.Drawing.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" SelfReg="false"/>
+    <ROW File="netstandard.dll" Component_="netstandard.dll" FileName="NETSTA~1.DLL|netstandard.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\netstandard.dll" SelfReg="false"/>
+    <ROW File="System.Windows.Forms.dll" Component_="System.Windows.Forms.dll" FileName="SYSTEM~7.DLL|System.Windows.Forms.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="System.Xml.dll" Component_="System.Xml.dll" FileName="SYSTEM~8.DLL|System.Xml.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" SelfReg="false"/>
+    <ROW File="System.Xml.Linq.dll" Component_="System.Xml.Linq.dll" FileName="SYSTEM~9.DLL|System.Xml.Linq.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" SelfReg="false"/>
+    <ROW File="FACTORIORCONUIV2.xml" Component_="FACTORIORCONUIV2.exe.config" FileName="FACTOR~1.XML|FACTORIORCONUIV2.xml" Attributes="0" SourcePath="..\bin\Release\FACTORIORCONUIV2.xml" SelfReg="false"/>
+    <ROW File="FACTORIORCONUIV2.pdb" Component_="FACTORIORCONUIV2.exe" FileName="FACTOR~1.PDB|FACTORIORCONUIV2.pdb" Attributes="0" SourcePath="..\bin\Release\FACTORIORCONUIV2.pdb" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale100.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~3.PNG|FactorioRCONGUISquare71x71Logo.scale-100.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-100.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale120.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~4.PNG|FactorioRCONGUISquare71x71Logo.scale-120.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-120.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~5.PNG|FactorioRCONGUISquare71x71Logo.scale-125.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-125.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale140.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~6.PNG|FactorioRCONGUISquare71x71Logo.scale-140.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-140.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~7.PNG|FactorioRCONGUISquare71x71Logo.scale-150.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-150.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale160.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~8.PNG|FactorioRCONGUISquare71x71Logo.scale-160.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-160.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale180.png" Component_="Store50x50Logo.scale100.png" FileName="FACTOR~9.PNG|FactorioRCONGUISquare71x71Logo.scale-180.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-180.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~10.PNG|FactorioRCONGUISquare71x71Logo.scale-200.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-200.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale220.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~11.PNG|FactorioRCONGUISquare71x71Logo.scale-220.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-220.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale225.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~12.PNG|FactorioRCONGUISquare71x71Logo.scale-225.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-225.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale240.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~13.PNG|FactorioRCONGUISquare71x71Logo.scale-240.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-240.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale250.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~14.PNG|FactorioRCONGUISquare71x71Logo.scale-250.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-250.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale300.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~15.PNG|FactorioRCONGUISquare71x71Logo.scale-300.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-300.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~16.PNG|FactorioRCONGUISquare71x71Logo.scale-400.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-400.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare71x71Logo.scale500.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~17.PNG|FactorioRCONGUISquare71x71Logo.scale-500.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare71x71Logo.scale-500.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale120.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~18.PNG|FactorioRCONGUISquare150x150Logo.scale-120.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-120.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~19.PNG|FactorioRCONGUISquare150x150Logo.scale-125.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-125.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale140.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~20.PNG|FactorioRCONGUISquare150x150Logo.scale-140.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-140.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~21.PNG|FactorioRCONGUISquare150x150Logo.scale-150.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-150.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale160.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~22.PNG|FactorioRCONGUISquare150x150Logo.scale-160.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-160.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale180.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~23.PNG|FactorioRCONGUISquare150x150Logo.scale-180.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-180.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~24.PNG|FactorioRCONGUISquare150x150Logo.scale-200.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-200.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale220.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~25.PNG|FactorioRCONGUISquare150x150Logo.scale-220.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-220.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale225.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~26.PNG|FactorioRCONGUISquare150x150Logo.scale-225.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-225.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale240.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~27.PNG|FactorioRCONGUISquare150x150Logo.scale-240.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-240.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale250.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~28.PNG|FactorioRCONGUISquare150x150Logo.scale-250.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-250.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale300.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~29.PNG|FactorioRCONGUISquare150x150Logo.scale-300.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-300.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~30.PNG|FactorioRCONGUISquare150x150Logo.scale-400.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-400.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare150x150Logo.scale500.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~31.PNG|FactorioRCONGUISquare150x150Logo.scale-500.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare150x150Logo.scale-500.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale100.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~32.PNG|FactorioRCONGUIWide310x150Logo.scale-100.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-100.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale120.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~33.PNG|FactorioRCONGUIWide310x150Logo.scale-120.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-120.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~34.PNG|FactorioRCONGUIWide310x150Logo.scale-125.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-125.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale140.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~35.PNG|FactorioRCONGUIWide310x150Logo.scale-140.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-140.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~36.PNG|FactorioRCONGUIWide310x150Logo.scale-150.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-150.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale160.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~37.PNG|FactorioRCONGUIWide310x150Logo.scale-160.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-160.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale180.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~38.PNG|FactorioRCONGUIWide310x150Logo.scale-180.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-180.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~39.PNG|FactorioRCONGUIWide310x150Logo.scale-200.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-200.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale220.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~40.PNG|FactorioRCONGUIWide310x150Logo.scale-220.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-220.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale225.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~41.PNG|FactorioRCONGUIWide310x150Logo.scale-225.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-225.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale240.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~42.PNG|FactorioRCONGUIWide310x150Logo.scale-240.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-240.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale250.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~43.PNG|FactorioRCONGUIWide310x150Logo.scale-250.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-250.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale300.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~44.PNG|FactorioRCONGUIWide310x150Logo.scale-300.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-300.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~45.PNG|FactorioRCONGUIWide310x150Logo.scale-400.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-400.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIWide310x150Logo.scale500.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~46.PNG|FactorioRCONGUIWide310x150Logo.scale-500.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIWide310x150Logo.scale-500.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale100.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~47.PNG|FactorioRCONGUISquare310x310Logo.scale-100.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-100.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale120.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~48.PNG|FactorioRCONGUISquare310x310Logo.scale-120.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-120.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~49.PNG|FactorioRCONGUISquare310x310Logo.scale-125.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-125.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale140.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~50.PNG|FactorioRCONGUISquare310x310Logo.scale-140.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-140.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~51.PNG|FactorioRCONGUISquare310x310Logo.scale-150.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-150.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale160.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~52.PNG|FactorioRCONGUISquare310x310Logo.scale-160.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-160.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale180.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~53.PNG|FactorioRCONGUISquare310x310Logo.scale-180.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-180.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~54.PNG|FactorioRCONGUISquare310x310Logo.scale-200.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-200.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale220.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~55.PNG|FactorioRCONGUISquare310x310Logo.scale-220.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-220.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale225.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~56.PNG|FactorioRCONGUISquare310x310Logo.scale-225.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-225.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale240.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~57.PNG|FactorioRCONGUISquare310x310Logo.scale-240.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-240.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale250.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~58.PNG|FactorioRCONGUISquare310x310Logo.scale-250.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-250.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale300.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~59.PNG|FactorioRCONGUISquare310x310Logo.scale-300.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-300.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~60.PNG|FactorioRCONGUISquare310x310Logo.scale-400.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-400.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare310x310Logo.scale500.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~61.PNG|FactorioRCONGUISquare310x310Logo.scale-500.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare310x310Logo.scale-500.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize16.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~62.PNG|FactorioRCONGUISquare44x44Logo.targetsize-16.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-16.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize16_altformunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~63.PNG|FactorioRCONGUISquare44x44Logo.targetsize-16_altform-unplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-16_altform-unplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize16_altformlightunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~64.PNG|FactorioRCONGUISquare44x44Logo.targetsize-16_altform-lightunplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-16_altform-lightunplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale120.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~65.PNG|FactorioRCONGUISquare44x44Logo.scale-120.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-120.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~66.PNG|FactorioRCONGUISquare44x44Logo.scale-125.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-125.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize24.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~67.PNG|FactorioRCONGUISquare44x44Logo.targetsize-24.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-24.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize24_altformunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~68.PNG|FactorioRCONGUISquare44x44Logo.targetsize-24_altform-unplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-24_altform-unplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize24_altformlightunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~69.PNG|FactorioRCONGUISquare44x44Logo.targetsize-24_altform-lightunplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-24_altform-lightunplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale140.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~70.PNG|FactorioRCONGUISquare44x44Logo.scale-140.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-140.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~71.PNG|FactorioRCONGUISquare44x44Logo.scale-150.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-150.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize32.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~72.PNG|FactorioRCONGUISquare44x44Logo.targetsize-32.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-32.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize32_altformunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~73.PNG|FactorioRCONGUISquare44x44Logo.targetsize-32_altform-unplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-32_altform-unplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize32_altformlightunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~74.PNG|FactorioRCONGUISquare44x44Logo.targetsize-32_altform-lightunplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-32_altform-lightunplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale160.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~75.PNG|FactorioRCONGUISquare44x44Logo.scale-160.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-160.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale180.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~76.PNG|FactorioRCONGUISquare44x44Logo.scale-180.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-180.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~77.PNG|FactorioRCONGUISquare44x44Logo.scale-200.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-200.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize48.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~78.PNG|FactorioRCONGUISquare44x44Logo.targetsize-48.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-48.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize48_altformunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~79.PNG|FactorioRCONGUISquare44x44Logo.targetsize-48_altform-unplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-48_altform-unplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize48_altformlightunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~80.PNG|FactorioRCONGUISquare44x44Logo.targetsize-48_altform-lightunplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-48_altform-lightunplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale220.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~81.PNG|FactorioRCONGUISquare44x44Logo.scale-220.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-220.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale225.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~82.PNG|FactorioRCONGUISquare44x44Logo.scale-225.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-225.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale240.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~83.PNG|FactorioRCONGUISquare44x44Logo.scale-240.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-240.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale250.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~84.PNG|FactorioRCONGUISquare44x44Logo.scale-250.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-250.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale300.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~85.PNG|FactorioRCONGUISquare44x44Logo.scale-300.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-300.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~86.PNG|FactorioRCONGUISquare44x44Logo.scale-400.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-400.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize256.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~87.PNG|FactorioRCONGUISquare44x44Logo.targetsize-256.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-256.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize256_altformunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~88.PNG|FactorioRCONGUISquare44x44Logo.targetsize-256_altform-unplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-256_altform-unplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.targetsize256_altformlightunplated.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~89.PNG|FactorioRCONGUISquare44x44Logo.targetsize-256_altform-lightunplated.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.targetsize-256_altform-lightunplated.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISquare44x44Logo.scale500.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~90.PNG|FactorioRCONGUISquare44x44Logo.scale-500.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISquare44x44Logo.scale-500.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale100.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~91.PNG|FactorioRCONGUISplashScreen.scale-100.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-100.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale120.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~92.PNG|FactorioRCONGUISplashScreen.scale-120.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-120.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~93.PNG|FactorioRCONGUISplashScreen.scale-125.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-125.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale140.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~94.PNG|FactorioRCONGUISplashScreen.scale-140.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-140.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~95.PNG|FactorioRCONGUISplashScreen.scale-150.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-150.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale160.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~96.PNG|FactorioRCONGUISplashScreen.scale-160.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-160.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale180.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~97.PNG|FactorioRCONGUISplashScreen.scale-180.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-180.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~98.PNG|FactorioRCONGUISplashScreen.scale-200.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-200.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale220.png" Component_="Store50x50Logo.scale100.png" FileName="FACTO~99.PNG|FactorioRCONGUISplashScreen.scale-220.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-220.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale225.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~100.PNG|FactorioRCONGUISplashScreen.scale-225.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-225.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale240.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~101.PNG|FactorioRCONGUISplashScreen.scale-240.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-240.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale250.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~102.PNG|FactorioRCONGUISplashScreen.scale-250.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-250.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale300.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~103.PNG|FactorioRCONGUISplashScreen.scale-300.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-300.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~104.PNG|FactorioRCONGUISplashScreen.scale-400.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-400.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUISplashScreen.scale500.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~105.PNG|FactorioRCONGUISplashScreen.scale-500.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUISplashScreen.scale-500.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale120.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~107.PNG|FactorioRCONGUIBadgeLogo.scale-120.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-120.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~108.PNG|FactorioRCONGUIBadgeLogo.scale-125.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-125.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale140.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~109.PNG|FactorioRCONGUIBadgeLogo.scale-140.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-140.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~110.PNG|FactorioRCONGUIBadgeLogo.scale-150.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-150.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale160.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~111.PNG|FactorioRCONGUIBadgeLogo.scale-160.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-160.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale180.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~112.PNG|FactorioRCONGUIBadgeLogo.scale-180.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-180.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~113.PNG|FactorioRCONGUIBadgeLogo.scale-200.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-200.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale220.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~114.PNG|FactorioRCONGUIBadgeLogo.scale-220.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-220.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale225.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~115.PNG|FactorioRCONGUIBadgeLogo.scale-225.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-225.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale240.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~116.PNG|FactorioRCONGUIBadgeLogo.scale-240.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-240.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale250.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~117.PNG|FactorioRCONGUIBadgeLogo.scale-250.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-250.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale300.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~118.PNG|FactorioRCONGUIBadgeLogo.scale-300.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-300.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~119.PNG|FactorioRCONGUIBadgeLogo.scale-400.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-400.png" SelfReg="false"/>
+    <ROW File="FactorioRCONGUIBadgeLogo.scale500.png" Component_="Store50x50Logo.scale100.png" FileName="FACT~120.PNG|FactorioRCONGUIBadgeLogo.scale-500.png" Attributes="0" SourcePath="Generated Assets\FactorioRCONGUIBadgeLogo.scale-500.png" SelfReg="false"/>
+    <ROW File="Store50x50Logo.scale125.png" Component_="Store50x50Logo.scale100.png" FileName="STORE5~2.PNG|Store50x50Logo.scale-125.png" Attributes="0" SourcePath="Generated Assets\Store50x50Logo.scale-125.png" SelfReg="false"/>
+    <ROW File="Store50x50Logo.scale150.png" Component_="Store50x50Logo.scale100.png" FileName="STORE5~3.PNG|Store50x50Logo.scale-150.png" Attributes="0" SourcePath="Generated Assets\Store50x50Logo.scale-150.png" SelfReg="false"/>
+    <ROW File="Store50x50Logo.scale200.png" Component_="Store50x50Logo.scale100.png" FileName="STORE5~4.PNG|Store50x50Logo.scale-200.png" Attributes="0" SourcePath="Generated Assets\Store50x50Logo.scale-200.png" SelfReg="false"/>
+    <ROW File="Store50x50Logo.scale400.png" Component_="Store50x50Logo.scale100.png" FileName="STORE5~5.PNG|Store50x50Logo.scale-400.png" Attributes="0" SourcePath="Generated Assets\Store50x50Logo.scale-400.png" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppXCfgComponent">
+    <ROW ID="Configuration" Order="1" ManifestFile="AppxManifest.xml" TargetOs="4" AutoUpdatesFrequency="0" AutoUpdatesOptions="0" ManifestBundleFile="AppxBundleManifest.xml"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="ARM64_Release" BuildName="ARM64_Release" BuildOrder="2" BuildType="0" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON_ARM64" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true"/>
+    <ROW BuildKey="ARM_Release" BuildName="ARM_Release" BuildOrder="1" BuildType="0" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON_ARM" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true"/>
+    <ROW BuildKey="Build_MSIX_APPX" BuildName="MSIX_StoreUpload" BuildOrder="5" BuildType="7" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON" Languages="en" UwpTargetDesktop="TargetDeviceFamily" UwpAppXBuildUploadFile="true"/>
+    <ROW BuildKey="Build_MSIX_APPXSubBuild" BuildName="x64" BuildOrder="6" BuildType="8" ParentBuild="Build_MSIX_APPX"/>
+    <ROW BuildKey="Build_MSIX_APPXSubBuild_1" BuildName="x86" BuildOrder="7" BuildType="8" ParentBuild="Build_MSIX_APPX"/>
+    <ROW BuildKey="Build_MSIX_APPX_1" BuildName="MSIX_Sideload" BuildOrder="8" BuildType="7" PackageFolder="Build_MSIX_APPX_1SetupFiles" PackageFileName="FACTORIORCON" Languages="en" UwpTargetDesktop="TargetDeviceFamily_2"/>
+    <ROW BuildKey="Build_MSIX_APPX_1SubBuild" BuildName="x64" BuildOrder="9" BuildType="8" ParentBuild="Build_MSIX_APPX_1"/>
+    <ROW BuildKey="Build_MSIX_APPX_1SubBuild_1" BuildName="x86" BuildOrder="10" BuildType="8" ParentBuild="Build_MSIX_APPX_1"/>
+    <ROW BuildKey="x64_Release" BuildName="x64_Release" BuildOrder="3" BuildType="0" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON_x64" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true"/>
+    <ROW BuildKey="x86_Release" BuildName="x86_Release" BuildOrder="4" BuildType="0" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON_x86" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="0" SignTool="0" UseSha256="1" Subject="CN=Walker Dick"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="InstallDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\InstallDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;surface\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;surface\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRepairDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlAttributeComponent">
+    <ROW XmlAttribute="BackgroundColor" XmlElement="VisualElements" Name="BackgroundColor" Flags="0" Order="0" Value="transparent"/>
+    <ROW XmlAttribute="Category" XmlElement="Extension" Name="Category" Flags="0" Order="0" Value="windows.desktopAppMigration"/>
+    <ROW XmlAttribute="Description" XmlElement="VisualElements" Name="Description" Flags="0" Order="0" Value="FACTORIORCONUIV2.exe"/>
+    <ROW XmlAttribute="DisplayName" XmlElement="VisualElements" Name="DisplayName" Flags="0" Order="0" Value="FACTORIORCONUIV2.exe"/>
+    <ROW XmlAttribute="EntryPoint" XmlElement="Application" Name="EntryPoint" Flags="0" Order="0" Value="Windows.FullTrustApplication"/>
+    <ROW XmlAttribute="EntryPoint_1" XmlElement="Extension" Name="EntryPoint" Flags="0" Order="0" Value="Windows.FullTrustApplication"/>
+    <ROW XmlAttribute="Executable" XmlElement="Application" Name="Executable" Flags="0" Order="0" FileId="FACTORIORCONUIV2.exe"/>
+    <ROW XmlAttribute="Executable_1" XmlElement="Extension" Name="Executable" Flags="0" Order="0" FileId="FACTORIORCONUIV2.exe"/>
+    <ROW XmlAttribute="Id" XmlElement="Application" Name="Id" Flags="0" Order="0" Value="FactorioRCONGUI"/>
+    <ROW XmlAttribute="Image" XmlElement="SplashScreen" Name="Image" Flags="0" Order="0" FileId="FactorioRCONGUISplashScreen.scale100.png"/>
+    <ROW XmlAttribute="Language" XmlElement="Resource" Name="Language" Flags="0" Order="0" Value="en-US"/>
+    <ROW XmlAttribute="MaxVersionTested" XmlElement="TargetDeviceFamily" Name="MaxVersionTested" Flags="0" Order="0" Value="10.0.22000.0"/>
+    <ROW XmlAttribute="MaxVersionTested_2" XmlElement="TargetDeviceFamily_2" Name="MaxVersionTested" Flags="0" Order="0" Value="10.0.22000.0"/>
+    <ROW XmlAttribute="MinVersion" XmlElement="TargetDeviceFamily" Name="MinVersion" Flags="0" Order="0" Value="10.0.17763.0"/>
+    <ROW XmlAttribute="MinVersion_2" XmlElement="TargetDeviceFamily_2" Name="MinVersion" Flags="0" Order="0" Value="10.0.17763.0"/>
+    <ROW XmlAttribute="Name" XmlElement="Identity" Name="Name" Flags="0" Order="0" Value="ComputerComa.FactorioRCONGUI"/>
+    <ROW XmlAttribute="Name_1" XmlElement="TargetDeviceFamily" Name="Name" Flags="0" Order="0" Value="Windows.Desktop"/>
+    <ROW XmlAttribute="Name_3" XmlElement="TargetDeviceFamily_2" Name="Name" Flags="0" Order="0" Value="Windows.Desktop"/>
+    <ROW XmlAttribute="Name_6" XmlElement="Capability" Name="Name" Flags="0" Order="0" Value="runFullTrust"/>
+    <ROW XmlAttribute="Preference_1" XmlElement="Rotation_1" Name="Preference" Flags="0" Order="0" Value="landscape"/>
+    <ROW XmlAttribute="ProcessorArchitecture" XmlElement="Identity" Name="ProcessorArchitecture" Flags="0" Order="0" Value="x64"/>
+    <ROW XmlAttribute="Publisher" XmlElement="Identity" Name="Publisher" Flags="0" Order="0" Value="CN=Walker Dick"/>
+    <ROW XmlAttribute="Scale" XmlElement="Resource_1" Name="Scale" Flags="0" Order="0" Value="100"/>
+    <ROW XmlAttribute="ShortcutPath" XmlElement="DesktopApp" Name="ShortcutPath" Flags="0" Order="0" Value="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Factorio RCON GUI\FACTORIORCONUIV2.exe.lnk"/>
+    <ROW XmlAttribute="ShortcutPath_1" XmlElement="DesktopApp_1" Name="ShortcutPath" Flags="0" Order="0" Value="%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Factorio RCON GUI\FACTORIORCONUIV2.exe.lnk"/>
+    <ROW XmlAttribute="ShortcutPath_2" XmlElement="DesktopApp_2" Name="ShortcutPath" Flags="0" Order="0" Value="%USERPROFILE%\Desktop\FACTORIORCONUIV2.exe.lnk"/>
+    <ROW XmlAttribute="Square150x150Logo" XmlElement="VisualElements" Name="Square150x150Logo" Flags="0" Order="0" FileId="FactorioRCONGUISquare150x150Logo.scale100.png"/>
+    <ROW XmlAttribute="Square310x310Logo" XmlElement="DefaultTile" Name="Square310x310Logo" Flags="0" Order="0" FileId="FactorioRCONGUISquare310x310Logo.scale100.png"/>
+    <ROW XmlAttribute="Square44x44Logo" XmlElement="VisualElements" Name="Square44x44Logo" Flags="0" Order="0" FileId="FactorioRCONGUISquare44x44Logo.scale100.png"/>
+    <ROW XmlAttribute="Square71x71Logo" XmlElement="DefaultTile" Name="Square71x71Logo" Flags="0" Order="0" FileId="FactorioRCONGUISquare71x71Logo.scale100.png"/>
+    <ROW XmlAttribute="Version" XmlElement="Identity" Name="Version" Flags="0" Order="0" Value="1.0.0.0"/>
+    <ROW XmlAttribute="Wide310x150Logo" XmlElement="DefaultTile" Name="Wide310x150Logo" Flags="0" Order="0" FileId="FactorioRCONGUIWide310x150Logo.scale100.png"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlElementComponent">
+    <ROW XmlElement="Application" ParentElement="Applications" Name="Application" Order="0" Flags="0" Type="4"/>
+    <ROW XmlElement="Applications" ParentElement="Package" Name="Applications" Order="3" Flags="0" Type="3"/>
+    <ROW XmlElement="Bundle" Name="Bundle" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="Capabilities" ParentElement="Package" Name="Capabilities" Order="5" Flags="0" Type="0"/>
+    <ROW XmlElement="Capability" ParentElement="Capabilities" Name="Capability" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="DefaultTile" ParentElement="VisualElements" Name="DefaultTile" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="Dependencies" ParentElement="Package" Name="Dependencies" Order="4" Flags="0" Type="0"/>
+    <ROW XmlElement="DesktopApp" ParentElement="DesktopAppMigration" Name="DesktopApp" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="DesktopAppMigration" ParentElement="Extension" Name="DesktopAppMigration" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="DesktopApp_1" ParentElement="DesktopAppMigration" Name="DesktopApp" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="DesktopApp_2" ParentElement="DesktopAppMigration" Name="DesktopApp" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="DisplayName" ParentElement="Properties" Name="DisplayName" Order="1" Flags="0" Text="Factorio RCON GUI" Type="0"/>
+    <ROW XmlElement="Extension" ParentElement="Extensions" Name="Extension" Order="0" Flags="0" Type="55"/>
+    <ROW XmlElement="Extensions" ParentElement="Application" Name="Extensions" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="Identity" ParentElement="Package" Name="Identity" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="InitialRotationPreference" ParentElement="VisualElements" Name="InitialRotationPreference" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="Logo" ParentElement="Properties" Name="Logo" Order="2" Flags="0" FileId="Store50x50Logo.scale100.png" Type="0"/>
+    <ROW XmlElement="Package" Name="Package" Order="0" Flags="0" Type="6"/>
+    <ROW XmlElement="Properties" ParentElement="Package" Name="Properties" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="PublisherDisplayName" ParentElement="Properties" Name="PublisherDisplayName" Order="0" Flags="0" Text="ComputerComa" Type="0"/>
+    <ROW XmlElement="Resource" ParentElement="Resources" Name="Resource" Order="0" Flags="0" Type="0"/>
+    <ROW XmlElement="Resource_1" ParentElement="Resources" Name="Resource" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="Resources" ParentElement="Package" Name="Resources" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="Rotation_1" ParentElement="InitialRotationPreference" Name="Rotation" Order="1" Flags="0" Type="0"/>
+    <ROW XmlElement="SplashScreen" ParentElement="VisualElements" Name="SplashScreen" Order="2" Flags="0" Type="0"/>
+    <ROW XmlElement="TargetDeviceFamily" ParentElement="Dependencies" Name="TargetDeviceFamily" Order="0" Flags="0" Type="28"/>
+    <ROW XmlElement="TargetDeviceFamily_2" ParentElement="Dependencies" Name="TargetDeviceFamily" Order="2" Flags="0" Type="28"/>
+    <ROW XmlElement="VisualElements" ParentElement="Application" Name="VisualElements" Order="0" Flags="0" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.GenericXmlFileComponent">
+    <ROW XmlFile="AppxBundleManifest.xml" FileName="AppxBundleManifest.xml" RootElement="Bundle" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+    <ROW XmlFile="AppxManifest.xml" FileName="AppxManifest.xml" RootElement="Package" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Customdimensions128x128px.jpeg" SourcePath="..\..\..\..\Downloads\Custom dimensions 128x128 px.jpeg"/>
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="CustomizeDlg" Control="CustomizeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="MsiRMFilesInUse#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="PatchWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="600" TextLocId="Metro.Control.Text.ProductName" MsiKey="PatchWelcomeDlg#ProductNameTitle"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="700" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="PatchWelcomeDlg#CompanyText"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="800" MsiKey="PatchWelcomeDlg#ProductLogo"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyReadyDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Back" Type="PushButton" X="5" Y="381" Width="11" Height="11" Attributes="2" Text="Control.Text.VerifyReadyDlg#Back" Help="Back|" Order="200" TextLocId="Control.Text.VerifyReadyDlg#Back" HelpLocId="Air.Control.Help#Back" MsiKey="VerifyReadyDlg#Back" Options="1" ExtType="PushButton" ExtData="[ButtonText_Back]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ReadyToInstall" Type="Text" X="17" Y="105" Width="312" Height="19" Attributes="196611" Text="Ready to Install" TextStyle="[SubTitleStyle]" Order="400" TextLocId="Control.Text.VerifyReadyDlg#Title" MsiKey="VerifyReadyDlg#ReadyToInstall"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Text_2" Type="Text" X="17" Y="139" Width="312" Height="100" Attributes="65539" Text="The [Wizard] is ready to begin the [ProductName] installation" Order="500" TextLocId="Control.Text.VerifyReadyDlg#Description" MsiKey="VerifyReadyDlg#Text_2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="InstallButton" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[metrobuttonimage]" TextStyle="[MetroButtonText]" Order="600" MsiKey="VerifyReadyDlg#InstallButton" ExtType="ImageButton" ExtData="INSTALL" ExtDataLocId="Metro.Control.ExtData.VerifyReadyDlg#InstallButton"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="700" TextLocId="Metro.Control.Text.ProductName" MsiKey="VerifyReadyDlg#ProductNameTitle"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="800" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="VerifyReadyDlg#CompanyText"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="900" MsiKey="VerifyReadyDlg#ProductLogo"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="AdvInst" Type="Text" X="5" Y="388" Width="74" Height="11" Attributes="196611" Text="Advanced Installer" TextStyle="[BrandingStyle]" Order="1000" MsiKey="VerifyReadyDlg#AdvInst"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyRemoveDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="345" Height="400" Attributes="1" Text="[Background]" Order="100" MsiKey="VerifyRepairDlg#Bitmap"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Repair" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[metrobuttonimage]" TextStyle="[MetroButtonText]" Order="200" MsiKey="VerifyRepairDlg#Repair" Options="1" ExtType="ImageButton" ExtData="&amp;Repair" ExtDataLocId="Metro.Control.ExtData.VerifyRepairDlg#Repair"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="301"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="301"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="199" Options="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="99"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="304" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL" Ordering="101" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL" Ordering="102" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL" Ordering="103" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL" Ordering="104" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="0" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="1" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="2" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EnableRollback" Argument="False" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_MAINT AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_MAINT" Ordering="0" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_MAINT" Ordering="1" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="202" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="203" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_PATCH AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="204" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_PATCH" Ordering="2" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_PATCH" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#FACTORIORCONUIV2.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RunFinishActions" Type="1" Source="aicustact.dll" Target="RunFinishActions" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="Build_MSIX_APPX:#Build_MSIX_APPX_1:"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="AiAppXAssets" Component_="Store50x50Logo.scale100.png"/>
+    <ROW Feature_="MainFeature" Component_="FACTORIORCONUIV2.exe"/>
+    <ROW Feature_="MainFeature" Component_="FACTORIORCONUIV2.exe.config"/>
+    <ROW Feature_="MainFeature" Component_="MaterialSkin.dll"/>
+    <ROW Feature_="MainFeature" Component_="Rcon.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.DataSetExtensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Http.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Deployment.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.dll"/>
+    <ROW Feature_="MainFeature" Component_="netstandard.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.Linq.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Consokle.exe" SourcePath="..\..\..\..\Downloads\Consokle.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="InstallDlg" Condition="AI_INSTALL" Sequence="1230" SeqType="3" MsiKey="WelcomeDlg"/>
+    <ROW Action="MaintenanceTypeDlg" Condition="AI_MAINT" Sequence="1250" SeqType="3" MsiKey="MaintenanceTypeDlg"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
+    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName" VirtualValue="#"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="ModifyPath" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="NoRepair" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="NoRepair" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Readme" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Readme" Value="[ARPREADME]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
+    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName" VirtualValue="#"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="FACTORIORCONUIV2.exe" Directory_="SHORTCUTDIR" Name="FACTOR~1.EXE|FACTORIORCONUIV2.exe" Component_="FACTORIORCONUIV2.exe" Target="[#FACTORIORCONUIV2.exe]" Description="FACTORIORCONUIV2.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="FACTORIORCONUIV2.exe_1" Directory_="DesktopFolder" Name="FACTOR~1.EXE|FACTORIORCONUIV2.exe" Component_="FACTORIORCONUIV2.exe" Target="[#FACTORIORCONUIV2.exe]" Description="FACTORIORCONUIV2.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="surface"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

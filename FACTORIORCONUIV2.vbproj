@@ -132,5 +132,8 @@
   <ItemGroup>
     <Content Include="Consokle.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Advanced_Installer\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

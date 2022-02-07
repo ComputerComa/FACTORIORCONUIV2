@@ -103,6 +103,7 @@ Partial Class FRM_MAIN
         '
         'MS_OUTPUT
         '
+        Me.MS_OUTPUT.Enabled = False
         Me.MS_OUTPUT.Location = New System.Drawing.Point(13, 194)
         Me.MS_OUTPUT.Multiline = True
         Me.MS_OUTPUT.Name = "MS_OUTPUT"
