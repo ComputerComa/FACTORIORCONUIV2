@@ -11,12 +11,11 @@
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
     <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
     <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="ARM_Release:aiui#ARM64_Release:aiui#x64_Release:aiui#x86_Release:aiui"/>
-    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
     <ROW Property="AI_PRODUCTNAME_ARP" Value="[|ProductName]"/>
     <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
-    <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="ARM_Release:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
     <ROW Property="ARPPRODUCTICON" Value="Consokle.exe" Type="8"/>
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
     <ROW Property="CTRLS" Value="2"/>
@@ -25,7 +24,7 @@
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Factorio RCON"/>
     <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
-    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{9F535CE7-6FAD-472F-8A5A-88964C56CCC5}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="ARM_Release:Windows 9x/ME#ARM64_Release:Windows 9x/ME#x64_Release:Windows 9x/ME#x86_Release:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsType9XDisplay" MultiBuildValue="ARM_Release:Windows 9x/ME#ARM64_Release:Windows 9x/ME#x64_Release:Windows 9x/ME#x86_Release:Windows 9x/ME" ValueLocId="-"/>
@@ -45,7 +44,6 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="AI_CustomARPName" ComponentId="{7D30886E-94D4-451A-8090-6A5841A0698A}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
-    <ROW Component="AI_ExePath" ComponentId="{17303867-FB5C-4870-9282-18A956BD903F}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{41723B4C-F9DE-48C4-8340-8A25B23608C6}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="FACTORIORCONUIV2.exe" ComponentId="{37B58F51-C94D-45EF-8F04-EE95EAC33C68}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe"/>
     <ROW Component="FACTORIORCONUIV2.exe.config" ComponentId="{8D4B510C-9FB3-41F2-90D6-F0F67B17D067}" Directory_="APPDIR" Attributes="0" KeyPath="FACTORIORCONUIV2.exe.config" Type="0"/>
@@ -222,7 +220,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="ARM64_Release" BuildName="ARM64_Release" BuildOrder="2" BuildType="0" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON_ARM64" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true"/>
-    <ROW BuildKey="ARM_Release" BuildName="ARM_Release" BuildOrder="1" BuildType="0" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON_ARM" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true"/>
+    <ROW BuildKey="ARM_Release" BuildName="ARM_Release" BuildOrder="1" BuildType="0" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON_ARM" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true"/>
     <ROW BuildKey="Build_MSIX_APPX" BuildName="MSIX_StoreUpload" BuildOrder="5" BuildType="7" PackageFolder="Setup_Files" PackageFileName="FACTORIORCON" Languages="en" UwpTargetDesktop="TargetDeviceFamily" UwpAppXBuildUploadFile="true"/>
     <ROW BuildKey="Build_MSIX_APPXSubBuild" BuildName="x64" BuildOrder="6" BuildType="8" ParentBuild="Build_MSIX_APPX"/>
     <ROW BuildKey="Build_MSIX_APPXSubBuild_1" BuildName="x86" BuildOrder="7" BuildType="8" ParentBuild="Build_MSIX_APPX"/>
@@ -322,21 +320,9 @@
     <ROW XmlFile="AppxBundleManifest.xml" FileName="AppxBundleManifest.xml" RootElement="Bundle" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
     <ROW XmlFile="AppxManifest.xml" FileName="AppxManifest.xml" RootElement="Package" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
   </COMPONENT>
-  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
-    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
-    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
-    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
-    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
-  </COMPONENT>
-  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
-    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="ARM_Release"/>
-    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="ARM_Release"/>
-  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
     <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
-    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
-    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
     <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
@@ -368,19 +354,10 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
-    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
-    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
-    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
-    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
-    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
     <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
-    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
-    <ROW Action="AI_ExtractFiles" Type="1" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
-    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
-    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
     <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#FACTORIORCONUIV2.exe]"/>
@@ -416,7 +393,6 @@
     <ROW Feature_="MainFeature" Component_="System.Xml.Linq.dll"/>
     <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
     <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
-    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="Consokle.exe" SourcePath="..\..\..\..\Downloads\Consokle.ico" Index="0"/>
@@ -430,17 +406,6 @@
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
     <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
     <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
-    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="ARM_Release"/>
-    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="ARM_Release"/>
-    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="ARM_Release"/>
-    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="ARM_Release"/>
-    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="ARM_Release"/>
-    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="ARM_Release"/>
-    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="ARM_Release"/>
-    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="ARM_Release"/>
-    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="ARM_Release"/>
-    <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="ARM_Release"/>
-    <ROW Action="AI_DATA_SETTER" Sequence="1398"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
@@ -454,15 +419,9 @@
     <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
     <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
     <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
-    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="ARM_Release"/>
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="ARM_Release;ARM64_Release;x64_Release;x86_Release"/>
   </COMPONENT>
-  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
-    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
-    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
-  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
-    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
     <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
     <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
     <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>

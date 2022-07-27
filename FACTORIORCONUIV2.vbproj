@@ -50,6 +50,16 @@
   <PropertyGroup>
     <ApplicationIcon>Consokle.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Pub|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Pub\</OutputPath>
+    <DocumentationFile>FACTORIORCONUIV2.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
