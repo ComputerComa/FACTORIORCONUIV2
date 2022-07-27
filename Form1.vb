@@ -3,10 +3,12 @@ Imports System
 Imports Rcon
 Imports Rcon.Events
 Imports System.Text.RegularExpressions
+'Last edited 7/27/22
 Public Class FRM_MAIN
     Dim DefaultPort As Integer = 25575
     Dim Client As RconClient = New RconClient()
     'Function to Validate connection inputs
+
     Public Function Form_Validate() As Boolean
         Dim IPVALID As Boolean = False
         Dim PortValid As Boolean = False
