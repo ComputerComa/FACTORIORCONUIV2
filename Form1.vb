@@ -3,7 +3,7 @@ Imports System
 Imports Rcon
 Imports Rcon.Events
 Imports System.Text.RegularExpressions
-'Last edited 7/27/22 12:20
+'Last edited 7/27/22 12:35
 Public Class FRM_MAIN
     Dim DefaultPort As Integer = 25575
     Dim Client As RconClient = New RconClient()
