@@ -1,5 +1,4 @@
 # FACTORIORCONUIV2
-Appveyor Build Status
 [![Build status](https://ci.appveyor.com/api/projects/status/3e35au6jpsn7gq5n?svg=true)](https://ci.appveyor.com/project/walkerdick2/factoriorconuiv2)
 
 
